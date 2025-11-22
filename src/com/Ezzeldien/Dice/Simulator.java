@@ -8,24 +8,31 @@ public class Simulator {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        boolean appCompleted = false;
+        do {
+            try {
+                DiceLogic();
+                appCompleted = true;
 
-        try{
-            System.out.println("Welcome to Dice Simulator , How many times you want to roll?");
-            int numberOfDice = sc.nextInt();
-            System.out.println("About to roll the dice of " + numberOfDice + " dice");
-
-            Random rand = new Random();
-            for (int i = 0; i < numberOfDice; i++) {
-                int rolledNumber = rand.nextInt(6) + 1;   //from 1 -> 6
-                System.out.println(display(rolledNumber));
+            } catch (InputMismatchException e) {
+                System.out.println("Please enter a number");
             }
+        }while (!appCompleted);
+        }
 
-        }catch(InputMismatchException e){
-            System.out.println("Please enter a number");
+
+    static void DiceLogic(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Dice Simulator , How many times you want to roll?");
+        int numberOfDice = sc.nextInt();
+        System.out.println("About to roll the dice of " + numberOfDice + " dice");
+
+        Random rand = new Random();
+        for (int i = 0; i < numberOfDice; i++) {
+            int rolledNumber = rand.nextInt(6) + 1;   //from 1 -> 6
+            System.out.println(display(rolledNumber));
         }
     }
-
 
     static String display(int value){
         return switch (value) {
