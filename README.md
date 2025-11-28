@@ -1,4 +1,4 @@
-# Native Apps Collection 🚀
+# Native Apps Collection 
 
 A collection of Java console applications demonstrating core programming concepts and practical utilities.
 
@@ -174,14 +174,14 @@ Native_Apps/
 
 ## Key Concepts Demonstrated
 
-- ✅ Object-Oriented Programming (OOP)
-- ✅ Design Patterns (Observer, Event-driven)
-- ✅ Exception Handling
-- ✅ Collections (ArrayList, Arrays)
-- ✅ File I/O Operations
-- ✅ Random Number Generation
-- ✅ String Manipulation
-- ✅ User Input Validation
+-  Object-Oriented Programming (OOP)
+-  Design Patterns (Observer, Event-driven)
+-  Exception Handling
+-  Collections (ArrayList, Arrays)
+-  File I/O Operations
+-  Random Number Generation
+-  String Manipulation
+-  User Input Validation
 
 ## Author
 
