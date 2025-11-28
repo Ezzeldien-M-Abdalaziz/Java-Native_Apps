@@ -8,16 +8,19 @@ public class TextBasedInterface implements UserInterface{
 
     @Override
     public void start() {
-        System.out.println("File Manager Menu: ");
-        System.out.println("1- List All Files");
-        System.out.println("2- create New directory");
-        System.out.println("3- Delete a file or directory");
-        System.out.println("4- Exit program");
-        System.out.println("Enter your choice: ");
+
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
 
         while(true){
+            System.out.println("File Manager Menu: ");
+            System.out.println("1- List All Files");
+            System.out.println("2- create New directory");
+            System.out.println("3- Delete a file or directory");
+            System.out.println("4- Exit program");
+            System.out.println("Enter your choice: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
             switch (choice) {
                 case 1:
                     System.out.println("Enter Path: ");
