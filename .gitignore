@@ -1,1 +1,12 @@
+
+
+# Java compiled files
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+
+# Environment files
 src/com/Ezzeldien/WeatherForecastApp/env.java
