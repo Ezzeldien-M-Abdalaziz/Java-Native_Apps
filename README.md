@@ -127,20 +127,37 @@ Guess a letter: a
 ### 5. 🌤️ Weather Forecast App
 **Location:** `src/com/Ezzeldien/WeatherForecastApp/`
 
-*Currently in development* - A weather forecasting application using external weather APIs.
+A simple weather client that calls OpenWeatherMap's 5-day forecast endpoint and prints the raw JSON response.
 
 **Components:**
-- `WeatherApi.java` - API integration
-- `env.java` - Environment configuration
+- `WeatherApi.java` - API HTTP integration
+- `env.java` - Environment configuration (holds `API_KEY`)
+- `WeatherApp.java` - Entry point
 
-**Note:** Requires API key configuration in `env.java`
+**Setup:**
+1. Get a free API key from https://openweathermap.org/
+2. Ensure `src/com/Ezzeldien/WeatherForecastApp/env.java` exists with:
+   ```java
+   package com.Ezzeldien.WeatherForecastApp;
+   public class env {
+       public static final String API_KEY = "<YOUR_API_KEY>";
+   }
+   ```
+
+**How to Run:**
+```bash
+javac src/com/Ezzeldien/WeatherForecastApp/*.java
+java -cp src com.Ezzeldien.WeatherForecastApp.WeatherApp
+```
+
+Tip: Replace the city used in `WeatherApp` (currently "Cairo") as you like.
 
 ---
 
 ## Project Structure
 
 ```
-Native_Apps/
+Java-Native_Apps/
 ├── src/
 │   └── com/
 │       └── Ezzeldien/
